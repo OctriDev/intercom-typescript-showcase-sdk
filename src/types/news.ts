@@ -3,7 +3,7 @@
 
 import type { NewsItem, Newsfeed, NewsfeedAssignment } from "./news/models";
 
-import type { CursorPages } from "./shared.part001";
+import type { CursorPages } from "./shared2";
 
 /**
  * Response returned when an object is deleted

@@ -5,7 +5,7 @@ import type { CustomObjectInstance } from "./custom-object-instances/models";
 
 import type { AiTopicSubtopicList } from "./shared-ai";
 
-import type { CxScoreReasonList, Datetime } from "./shared.part001";
+import type { CxScoreReasonList, Datetime } from "./shared2";
 
 /**
  * Contains details about final status of the completed action for conversation part type <code>custom_action_finished</code>.

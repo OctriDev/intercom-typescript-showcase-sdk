@@ -121,9 +121,9 @@ export async function linkTicketsConversation(
   );
 }
 
-export type UnlinkTicketsConversationError = Error2;
+export type UnlinkTicketConversationError = Error2;
 
-export interface UnlinkTicketsConversationParams {
+export interface UnlinkTicketConversationParams {
   ticketId: string;
   id: string;
   intercomVersion?: IntercomVersion;
@@ -139,15 +139,15 @@ export interface UnlinkTicketsConversationParams {
  * @param id - The unique identifier (given by Intercom) for the linked
  *   conversation or customer ticket to unlink.
  */
-export async function unlinkTicketsConversation(
+export async function unlinkTicketConversation(
   config: ClientConfig,
-  { ticketId, id, intercomVersion }: UnlinkTicketsConversationParams,
+  { ticketId, id, intercomVersion }: UnlinkTicketConversationParams,
   requestOptions?: RequestOptions,
 ): Promise<Conversation> {
   const _resp = await sdkRequest<Conversation>({
     method: "DELETE",
     path: `/tickets/${encodePathSegment(ticketId)}/linked_conversations/${encodePathSegment(id)}`,
-    operationId: "unlinkTicketsConversation",
+    operationId: "unlinkTicketConversation",
     errors: { "400": "Error2", "401": "Error2", "404": "Error2" },
     responseDecoder: "json",
     ...requestOptions,
@@ -694,10 +694,10 @@ export class TicketsNamespace {
    * Unlink a conversation (or converted customer ticket) from a tracker ticket it is currently linked to. The ticket in the path must be a tracker ticket. This returns the conversation that was unlinked. Requires the `write_tickets` OAuth scope.
    */
   unlinkConversation(
-    params: UnlinkTicketsConversationParams,
+    params: UnlinkTicketConversationParams,
     requestOptions?: RequestOptions,
-  ): ReturnType<typeof unlinkTicketsConversation> {
-    return unlinkTicketsConversation(this._config, params, requestOptions);
+  ): ReturnType<typeof unlinkTicketConversation> {
+    return unlinkTicketConversation(this._config, params, requestOptions);
   }
   /**
    * Creates a ticket using a ticket type and one or more affected contacts. Supply `ticket_type_id` and `contacts`; you can also provide ticket attributes, assignment details, or a conversation to link. A 200 response returns the created ticket and its current state.

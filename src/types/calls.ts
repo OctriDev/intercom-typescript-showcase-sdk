@@ -3,7 +3,7 @@
 
 import type { Call } from "./calls/models";
 
-import type { CursorPages } from "./shared.part001";
+import type { CursorPages } from "./shared2";
 
 /**
  * Response containing information about a Fin Voice call

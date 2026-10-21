@@ -3,7 +3,7 @@
 
 import type { Admin } from "./admins/models";
 
-import type { CursorPages } from "./shared.part001";
+import type { CursorPages } from "./shared2";
 
 /**
  * Activities performed by Admins.

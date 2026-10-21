@@ -9,7 +9,7 @@ import type {
   ContactTags,
 } from "../shared-contact";
 
-import type { MergeHistoryItem } from "../shared.part001";
+import type { MergeHistoryItem } from "../shared2";
 
 /**
  * Contacts represent your leads and users in Intercom.

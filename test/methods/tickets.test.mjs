@@ -21,7 +21,7 @@ import { SdkHttpError, SdkNetworkError, SdkResponseDecodeError } from "../../dis
 import {
   replyTicket,
   linkTicketsConversation,
-  unlinkTicketsConversation,
+  unlinkTicketConversation,
   createTicket,
   enqueueCreateTicket,
   updateTicket,
@@ -84,8 +84,8 @@ const CALL = {
         intercomVersion: bag["Intercom-Version"],
       }),
   },
-  unlinkTicketsConversation: {
-    route: "unlinkTicketsConversation",
+  unlinkTicketConversation: {
+    route: "unlinkTicketConversation",
     endpoint: "DELETE /tickets/{ticket_id}/linked_conversations/{id}",
     mediaType: null,
     renamedKeys: [
@@ -109,7 +109,7 @@ const CALL = {
       "monitor_evaluations",
     ],
     invoke: (bag) =>
-      unlinkTicketsConversation(config, {
+      unlinkTicketConversation(config, {
         ticketId: bag["ticket_id"],
         id: bag["id"],
         intercomVersion: bag["Intercom-Version"],

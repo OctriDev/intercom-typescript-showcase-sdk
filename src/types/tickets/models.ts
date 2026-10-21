@@ -12,7 +12,7 @@ import type {
   TicketTypeAttributeList,
 } from "../shared-ticket";
 
-import type { PartAttachment, Reference } from "../shared.part001";
+import type { PartAttachment, Reference } from "../shared2";
 
 /**
  * Tickets are how you track requests from your users.

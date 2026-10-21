@@ -3,7 +3,7 @@
 
 import type { InternalArticle } from "../articles/models";
 
-import type { CursorPages } from "../shared.part001";
+import type { CursorPages } from "../shared2";
 
 /**
  * The data returned about your internal articles when you list them.

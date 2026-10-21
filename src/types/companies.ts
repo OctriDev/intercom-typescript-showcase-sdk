@@ -12,7 +12,7 @@ import type {
   MultipleFilterSearchRequest,
   SingleFilterSearchRequest,
   StartingAfterPaging,
-} from "./shared.part001";
+} from "./shared2";
 
 /**
  * A list of Contact Objects

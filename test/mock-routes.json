@@ -22929,7 +22929,7 @@
     }
   },
   {
-    "operationId": "unlinkTicketsConversation",
+    "operationId": "unlinkTicketConversation",
     "summary": "Unlinks a conversation or converted customer ticket from the tracker ticket it is linked to. Supply the tracker ticket identifier and the identifier of the linked conversation or customer ticket. This operation requires the `write_tickets` OAuth scope.",
     "method": "DELETE",
     "pathTemplate": "/tickets/{ticket_id}/linked_conversations/{id}",
