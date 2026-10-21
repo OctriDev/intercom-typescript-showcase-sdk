@@ -3,7 +3,7 @@
 
 import type { Collection, HelpCenterRedirect } from "./help-center/models";
 
-import type { CursorPages } from "./shared.part001";
+import type { CursorPages } from "./shared2";
 
 /**
  * This will return a list of Collections for the App.

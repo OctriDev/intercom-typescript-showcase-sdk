@@ -3,7 +3,7 @@
 
 import type { InternalArticleListItem } from "./internal-articles/models";
 
-import type { CursorPages } from "./shared.part001";
+import type { CursorPages } from "./shared2";
 
 /**
  * You can create an Internal Article

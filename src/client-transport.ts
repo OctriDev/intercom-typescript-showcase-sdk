@@ -494,7 +494,7 @@ const OPERATION_SECURITY: Readonly<Record<string, readonly (readonly string[])[]
 
   linkTicketsConversation: [["bearerAuth"]],
 
-  unlinkTicketsConversation: [["bearerAuth"]],
+  unlinkTicketConversation: [["bearerAuth"]],
 
   createTicket: [["bearerAuth"]],
 

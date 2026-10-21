@@ -5,7 +5,7 @@ import type {
   MultipleFilterSearchRequest,
   SingleFilterSearchRequest,
   StartingAfterPaging,
-} from "./shared.part001";
+} from "./shared2";
 
 /**
  * Search using Intercoms Search APIs.
